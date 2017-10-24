@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package employee_salary;
+
+service EmployeeService {
+    rpc getSalary (EmployeeId) returns (EmployeeSalary);
+}
+
+message EmployeeId {
+    int32 employee_id = 1;
+}
+
+message Employee {
+    int32 employee_id = 1;
+    string name = 2;
+    double salary = 3;
+}
+
+message EmployeeSalary {
+    double salary = 1;
+}

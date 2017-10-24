@@ -1,0 +1,4 @@
+node_modules/
+.idea/
+testdb.sqlite
+package-lock.json
